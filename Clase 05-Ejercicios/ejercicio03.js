@@ -12,9 +12,9 @@ let horasParciales;
 let minutosParciales;
 let segundosParciales;
 
-let horasConvertidas;
-let minutosConvertidos;
-let segundosConvertidos;
+let horasTotales;
+let minutosTotales;
+let segundosTotales;
 
 
 function sumarTiempos(numeros){
@@ -38,11 +38,16 @@ $botonCalcular.onclick = function(){
     minutosParciales=sumarTiempos(listaMinutos);
     segundosParciales=sumarTiempos(listaSegundos);
 
-    totalSegundos= segundosParciales %60;
-    minutosASumar=(totalSegundos - totalSegundos) /60;
-    totalSumadoMin += minutosAsumar;
-    
+    segundosTotales= Math.floor(segundosParciales % 60);
+    minutosTotales= Math.floor(segundosParciales / 60) + (minutosParciales % 60);
+    horasTotales= Math.floor(minutosParciales / 60 + horasParciales);
 
-    console.log(horasParciales);
+    document.querySelector("#duracion-videos").innerText= `La duración de los videos es de:${horasTotales}:${minutosTotales}:${segundosTotales}`; 
+
+    console.log(horasTotales);
+    console.log(minutosTotales);
+    console.log(segundosTotales);
+
+    
     return false;
 }
