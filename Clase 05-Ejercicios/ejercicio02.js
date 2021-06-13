@@ -8,10 +8,11 @@ $botonMostrar.onclick = function(){
 
     const nombreUsuario= `${nombre} y ${apellido}`
     document.querySelector("h1").innerText= `Bienvenido, ${nombreUsuario}`;
-
+    
+    
     const informacionUsuario= `Tu nombre es ${nombreUsuario} y tenes ${edad} años.`;
-    document.querySelector("#informacion-usuario").value= informacionUsuario;
-
+    document.querySelector("#informacion-usuario").innerText= informacionUsuario;
+    
 
   
 
