@@ -1,0 +1,7 @@
+.oculto {
+    display: none;
+}
+
+.input-salarios input {
+    display:inline-block
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    
+
+    <title>Ejercicio 2-Clase 6</title>
+</head>
+<body>
+    <h1>Calculo de salarios familiares:</h1>
+
+    <form>
+        <label>Ingrese el salario por individuo: </label>
+        <input type="number" id="salarios-familia">
+        <button type="submit" id="boton-agregar">Agregar</button>
+
+        <div id="mostrar-salarios">
+
+
+
+        </div>
+
+        <button type="button" id="borrar-salario" class="oculto">¿Eliminar el ùltimo salario?</button>
+        <button type="button" id="calcular" class="oculto">Calcular</button>
+        <button type="reset" id="resetear" class="oculto">¿Volver a iniciar?</button>
+
+        <div id="calculo-salario" class="oculto">
+            <p>El salario anual mayor es: <em id="salario-mayor"></em> </p>
+            <p>El salario anual menor es: <em id="salario-menor"></em> </p>
+            <p>El salario anual promedio es: <em id="salario-anual-promedio"></em> </p>
+            <p>El salario mensual promedio es: <em id="salario-mensual-promedio"></em> </p>
+        </div>
+
+       
+
+
+    </form>
+
+    <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="Ejercicio02.js"></script>
+</body>
+</html>
