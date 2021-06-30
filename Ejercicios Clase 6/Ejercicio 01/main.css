@@ -1,7 +1,11 @@
 .oculto {
-    display: none;
+  display: none;
 }
 
 .input-salarios input {
-    display:inline-block
+  display: inline-block;
+}
+
+#errores {
+  border: 2px solid red;
 }
